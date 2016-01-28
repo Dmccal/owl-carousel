@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    font-size: 18px;
     margin: 0;
 }
 
@@ -26,6 +27,10 @@ h1 {
 }
 
 p {
+
+}
+
+p.info {
     text-align: center;
 }
 
@@ -33,4 +38,45 @@ footer p {
     color: #555555;
     margin: 0;
     text-align: center;
+}
+
+
+/* custom slide styles */
+#my-carousel {
+    position: relative;
+}
+
+.custom-slide {
+    background-color: #CCCCCC;
+    padding: 20px;
+}
+
+.custom-slide h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.custom-slide p {
+    margin: 20px 0;
+}
+
+.action-button {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.action-button a:link, .action-button a:visited {
+    border: 1px solid #555555;
+    border-radius: 5px;
+    background-color: #AAAAAA;
+    color: #333333;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.action-button a:hover, .action-button a:active {
+    background-color: #555555;
+    color: #FFFFFF;
 }

@@ -11,28 +11,38 @@
 
 <body>
 <header>
-    <h1>Owl Carousel 2</h1>
+    <h1>Owl Carousel 2 Demo</h1>
 </header>
 
 <div class="container">
 
     <!-- begin carousel -->
-    <div class="owl-carousel">
+    <div id="my-carousel">
         <div><img src="img/1.png" alt="1"></div>
         <div><img src="img/2.png" alt="2"></div>
         <div><img src="img/3.png" alt="3"></div>
         <div><img src="img/4.png" alt="4"></div>
         <div><img src="img/5.png" alt="5"></div>
         <div><img src="img/6.png" alt="6"></div>
+
+        <div class="custom-slide">
+            <h2>Slide 7</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris massa, efficitur eu fringilla tincidunt, sollicitudin vel quam. Pellentesque efficitur, dolor et pretium cursus, leo libero efficitur urna, quis tempus odio lorem sed massa. Mauris gravida eget quam vitae molestie. Mauris vulputate eget lacus id egestas. Nam luctus libero at bibendum rhoncus. Maecenas pharetra augue at arcu consequat, quis lobortis dolor mollis. Aenean lorem sem, auctor eget justo vitae, varius facilisis diam.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris massa, efficitur eu fringilla tincidunt, sollicitudin vel quam. Pellentesque efficitur, dolor et pretium cursus, leo libero efficitur urna, quis tempus odio lorem sed massa. Mauris gravida eget quam vitae molestie. Mauris vulputate eget lacus id egestas. Nam luctus libero at bibendum rhoncus. Maecenas pharetra augue at arcu consequat, quis lobortis dolor mollis. Aenean lorem sem, auctor eget justo vitae, varius facilisis diam.</p>
+
+            <span class="action-button"><a href="#">Learn more!</a></span>
+        </div>
     </div>
     <!-- end carousel -->
 
-    <p>This page is a demo of <a href="http://smashingboxes.github.io/OwlCarousel2/">Owl Carousel 2</a> using <a href="https://jquery.com/">jQuery</a>.</p>
+    <p class="info">This page is a demo of <a href="http://smashingboxes.github.io/OwlCarousel2/">Owl Carousel 2</a> using <a href="https://jquery.com/">jQuery</a>.</p>
 
 </div>
 
 <footer>
-  <p>by Jon Cooper</p>
+  <p>Created January 27, 2016</p>
 </footer>
 
 
@@ -41,7 +51,7 @@
 <script src="js/owl.carousel.min.js"></script>
 
 <script>
-$('.owl-carousel').owlCarousel({
+$('#my-carousel').owlCarousel({
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
     items : 1,
